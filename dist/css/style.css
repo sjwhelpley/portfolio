@@ -47,7 +47,7 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   line-height: 4em;
-  background-color: #F5FEFF;
+  background-color: #EDF6F9;
 }
 
 .sjw-logo {
@@ -57,6 +57,9 @@ header {
 
 .name {
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  color: #006D77;
+  margin-left: 30px;
 }
 
 /* Navigation Bar */
@@ -67,38 +70,22 @@ header {
 }
 
 .nav-links {
+  font-size: 18px;
   display: inline;
   text-decoration: none;
   color: black;
   margin-left: 10vw;
 }
 
-.nav-links {
-  font-size: 18px;
-}
-
-@media screen and (min-width: 320px) {
-  .nav-links {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 1120));
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .nav-links {
-    font-size: 24px;
-  }
-}
-
 p.active,
 .nav-links:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #79B5BC));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #79B5BC 50%);
+  border-bottom: 3px dotted #E29578;
 }
 
 /* Heading */
 .intro {
   padding: 10px 0 10px 30px;
-  background-color: #F5FEFF;
+  background-color: #EDF6F9;
 }
 
 .intro-title {
@@ -112,13 +99,13 @@ p.active,
 
 @media screen and (min-width: 320px) {
   .intro-title {
-    font-size: calc(36px + 36 * ((100vw - 320px) / 1120));
+    font-size: calc(36px + 14 * ((100vw - 320px) / 1120));
   }
 }
 
 @media screen and (min-width: 1440px) {
   .intro-title {
-    font-size: 72px;
+    font-size: 50px;
   }
 }
 
@@ -133,14 +120,21 @@ p.active,
 
 @media screen and (min-width: 320px) {
   .intro-details {
-    font-size: calc(16px + 20 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
   }
 }
 
 @media screen and (min-width: 1440px) {
   .intro-details {
-    font-size: 36px;
+    font-size: 32px;
   }
+}
+
+/* About */
+.about {
+  background-color: #FFDDD2;
+  height: 50vh;
+  width: 100%;
 }
 
 /* Portfolio */
@@ -168,7 +162,27 @@ footer {
   bottom: 0;
   width: 100%;
   height: 130px;
-  background-color: #F5FEFF;
+  background-color: #EDF6F9;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content-web {
@@ -211,6 +225,10 @@ footer {
   .portfolio {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+  }
+  /* Footer */
+  .social-media {
+    width: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
