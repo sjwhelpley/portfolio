@@ -44,6 +44,7 @@ $u4: unit($max-font-size);
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: $color-lightblue;
 }
 
 // h1, h2, h3, h4, h5, h6 {
@@ -81,14 +82,12 @@ header {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     color: $color-darkblue;
-    margin-left: 4vw;
 }
 
 /* Navigation Bar */
 .nav-bar {
     line-height: 4em;
     margin-left: auto;
-    margin-right: 4vw;
 }
 
 .nav-links {
@@ -134,7 +133,7 @@ footer {
 
 .resume-link {
     font-size: 18px;
-    margin: 20px;
+    margin-bottom: 20px;
     border-bottom: 0.5px solid black;
     transition: color linear 0.2s;
 }
@@ -156,6 +155,10 @@ footer {
     padding: 30px;
     background-color: $color-lightblue;
     text-align: center;
+}
+
+#floral-s {
+    width: 40%;
 }
 
 .intro-title {
@@ -183,7 +186,6 @@ footer {
     grid-template-columns: auto;
     grid-row-gap: 5vw;
     grid-template-rows: auto auto;
-    margin: 3em;
 }
 
 .project {
@@ -213,16 +215,20 @@ footer {
 
 //// About Page ////
 /* About */
+.about {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
 .portrait {
     width: 15em;
     border-radius: 100%;
     margin: 0 auto;
 }
 
-.about {
-    padding: 20px 0px;
-    display: grid;
-    grid-template-columns: 100%;
+.about-paragraphs {
+    margin: 20px;
 }
 
 .about-paragraphs p {
@@ -231,7 +237,7 @@ footer {
 
 .skills {
     width: 100%;
-    padding: 30px;
+    padding: 0px 20px 20px 20px;
     display: grid;
     grid-template-columns: 100%;
 }
@@ -292,13 +298,23 @@ footer {
         height: 4em;
     }
 
-    .nav-bar {
-        margin-left: auto;
-        line-height: 4em;
-    }
+    // .nav-bar {
+    //     margin-left: auto;
+    //     line-height: 4em;
+    // }
 
     .nav-links {
         margin-left: 3vw;
+    }
+
+    /*Intro*/
+    // .intro {
+    //     height: 90vh;
+    // }
+
+    #floral-s {
+        width: 20%;
+        min-width: 200px;
     }
 
     /* Portfolio */
@@ -312,7 +328,8 @@ footer {
     }
 
     .about-paragraphs {
-        padding: 20px;
+        padding: 0;
+        margin: 0;
     }
 
     .skills {
@@ -322,5 +339,12 @@ footer {
     /* Footer */
     .social-media {
         width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #floral-s {
+        width: 10%;
+        min-width: 100px;
     }
 }
