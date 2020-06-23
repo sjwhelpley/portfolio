@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samantha Whelpley</title>
+    
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <title>Samantha Whelpley</title>
   </head>
 
   <body class="grid">
@@ -30,7 +32,7 @@
     <section class="c12 intro">
       <h1 class="intro-title">Hello, I'm Samantha! Senior at Pitt & 
         <span class="highlight">future frontend developer and designer</span>.</h1>
-      <h2 class="intro-details">Currently looking for post-grad positions starting after May 2021.</h2>
+      <h2 class="intro-details">Currently looking for post-grad positions starting May 2021.</h2>
       <div class="social-media">
         <h3><a href="#">RESUME</a> <a href="mailto:sjw86@pitt.edu">EMAIL</a> <a href="https://www.linkedin.com/in/samanthawhelpley/" target="_blank">LINKEDIN</a> 
           <a href="https://github.com/sjwhelpley" target="_blank">GITHUB</a> <a href="https://codepen.io/samwhelpley/" target="_blank">CODEPEN</a></h3>
@@ -90,56 +92,5 @@
       </div>
       <p>&copy; Samantha Whelpley 2020</p>
     </footer>
-
-    <script>
-      // Show an element
-      var show = function (elem) {
-        // Get the natural height of the element
-        var getHeight = function () {
-          elem.style.display = 'block'; // Make it visible
-          var height = elem.scrollHeight + 'px'; // Get it's height
-          elem.style.display = ''; //  Hide it again
-          return height;
-        };
-
-        var height = getHeight(); // Get the natural height
-        elem.classList.add('active'); // Make the element visible
-        elem.style.height = height; // Update the max-height
-
-        // Once the transition is complete, remove the inline max-height so the content can scale responsively
-        window.setTimeout(function () {
-          elem.style.height = '';
-        }, 350);
-      };
-
-      // Hide an element
-      var hide = function (elem) {
-        // Give the element a height to change from
-        elem.style.height = elem.scrollHeight + 'px';
-
-        // Set the height back to 0
-        window.setTimeout(function () {
-          elem.style.height = '0';
-        }, 1);
-
-        // When the transition is complete, hide it
-        window.setTimeout(function () {
-          elem.classList.remove('active');
-        }, 350);
-      };
-
-      // Toggle element visibility
-      var toggle = function () {
-        var elem = document.getElementById("mobile-nav-bar");
-        // If the element is visible, hide it
-        if (elem.classList.contains('active')) {
-          hide(elem);
-          return;
-        }
-
-        // Otherwise, show it
-        show(elem);
-      };
-    </script>
   </body>
 </html>

@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
     <title>Samantha Whelpley</title>
   </head>
 
   <body class="grid">
     <header class="c12">
-      <p class="name content-web">samantha joy whelpley</p>
-      <p class="name content-mobile">sjw</p>
-      <nav class="nav-bar">
-        <p class="nav-links"><a class="hover" href="index.html">Work</a></p>
-        <p class="nav-links"><a class="active" href="about.html">About</a></p>
+      <h2 class="name">samantha joy whelpley</h2>
+      <a class="mobile-menu" onclick="toggle()"><h2>MENU</h2></a>
+      <nav class="mobile-nav-bar" id="mobile-nav-bar">
+        <h3 class="nav-links"><a class="active" href="/">Work</a></h3>
+        <h3 class="nav-links"><a class="hover" href="about">About</a></h3>
+        <h3 class="nav-links"><a class="hover" href="resume">Resume</a></h3>
       </nav>
-    </header>
+
+      <nav class="content-web nav-bar">
+        <h3 class="nav-links"><a class="active" href="/">Work</a></h3>
+        <h3 class="nav-links"><a class="hover" href="about">About</a></h3>
+        <h3 class="nav-links"><a class="hover" href="resume">Resume</a></h3>
+      </nav>
+  </header>
 
     <!-- <section class="about c12">
       <img class="portrait" src="img/profile.png" />
