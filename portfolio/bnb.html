@@ -36,31 +36,32 @@
 
     <main class="c8-center bnb">
         <h3>Overview</h3>
-        <p>For my iXperience Full Stack Coding course, my final project was to create a functioning system that replicated
-            the services of Airbnb. I created 5 components:
+        <p>For my iXperience Full Stack Coding course, the final project was to create a functioning home-rental system replicating
+            the main services of Airbnb. This was my first full stack project, as well as the first time I used Angular or built an API!
+             I built 5 components for this project:
         </p>
         <ol class="list">
-            <li>Consumer mobile app - allows users to join, view listed properties, and book stays.</li>
-            <li>Provider mobile app - allows users to join and list & manage their own properties for rent.</li>
+            <li>Consumer mobile app - allows users to join, view listed properties, and create bookings.</li>
+            <li>Provider mobile app - allows users to join, create and update their rental property listings, and manage booking requests.</li>
             <li>Admin panel web app - allows admins to view all registered app users, listings and booking requests.</li>
-            <li>REST API - for communication between apps and database.</li>
-            <li>MySQL database - for storing account information, listings, and booked trips.</li>
+            <li>REST API - for communication between the applications and database.</li>
+            <li>MySQL database - for storing account information, listings, and bookings.</li>
         </ol>
 
         <h3>Tech Stack</h3>
         <p>The consumer and provider apps are build with Angular's Ionic framework, with Node.js for the backend. The admin
-            panel is built with Angular. The API is created with Express with a MySQL database.
+            panel is built with Angular. The API uses Express and connects to a MySQL database.
         </p>
 
         <h3>Timeline</h3>
-        <p>July to August 2019</p>
+        <p>July to August 2019 (~5 weeks)</p>
 
         <hr>
 
         <h3>Description</h3>
         <p>On each app, users are first prompted to log in. Users of the Consumer and Provider apps are also able to 
           register an account, but this is not a feature on the Admin panel for security purposes. All users are authenticated 
-          by the API using JWT (JSON Web Tokens). All passwords are hashed using bcrypt.
+          by the API using JWT (JSON Web Tokens). Passwords are hashed using bcrypt.
         </p>
 
         <a href="https://github.com/sjwhelpley/fs-bnb/tree/master/fs-consumer" target="_blank"><h4>Consumer bnb app</h4></a>
@@ -93,9 +94,9 @@
         <h4>Feel free to also check out my code for the <a href="https://github.com/sjwhelpley/fs-bnb/tree/master/fs-api" target="_blank">API</a> and the <a href="https://github.com/sjwhelpley/fs-bnb/blob/master/fs_bnb_database.sql" target="_blank">database</a>.</h4>
 
         <h3>Next Steps</h3>
-        <p>My future goals for this project would be to add to the design and features. I would love to create a better sense of a brand
-          and have all applications have a unique, cohesive design. The grading of this project was on functionality alone, so I did not spend 
-          a lot of time on the UI/UX. As for features:</p>
+        <p>My future goals for this project would be to add to the design and features. I would love to create better branding
+          and have all applications follow a unique, cohesive design. The grading of this project was on functionality alone, so I did not spend 
+          a lot of time on the UI/UX. Regarding features:</p>
           <ul class="list">
             <li>On the consumer app, I would like to make the search bar functional so that once a lot of properties are added, users
           can find them by city or country. I would also like to allow users to edit or delete bookings.</li>
