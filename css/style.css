@@ -36,7 +36,7 @@ body {
 }
 
 /*Typography*/
-h1, h2 {
+h1, h2, h4 {
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -56,7 +56,12 @@ h3 {
   text-transform: uppercase;
 }
 
-p {
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+p, ol, li, figcaption {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
 }
@@ -302,6 +307,50 @@ a.active {
 .right-column {
   flex: 50%;
 }
+
+/* bnb */
+.bnb h3,
+.bnb h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+main a {
+  color: var(--darkblue);
+}
+
+.bnb figcaption {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.list {
+  margin: 10px 0px 10px 50px;
+}
+
+.list li {
+  padding: 5px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.bnb-img {
+  text-align: center;
+  margin: 10px;
+}
+
+.bnb-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1100px) {
+  .bnb-img img {
+    width: 75%;
+  }
+}
+
 
 /* Footer */
 footer {

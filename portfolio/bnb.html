@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript" src="../js/main.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        
+        <title>Samantha Whelpley</title>
+    </head>
+
+  <body class="grid bnb">
+    <header class="c12">
+        <h2 class="name">samantha joy whelpley</h2>
+        <a class="mobile-menu" onclick="toggle()"><h2>MENU</h2></a>
+        <nav class="mobile-nav-bar" id="mobile-nav-bar">
+          <h3 class="nav-links"><a class="hover" href="../">Work</a></h3>
+          <h3 class="nav-links"><a class="hover" href="../about">About</a></h3>
+          <h3 class="nav-links"><a class="active" href="../resume">Resume</a></h3>
+        </nav>
+
+        <nav class="content-web nav-bar">
+          <h3 class="nav-links"><a class="hover" href="../">Work</a></h3>
+          <h3 class="nav-links"><a class="hover" href="../about">About</a></h3>
+          <h3 class="nav-links"><a class="active" href="../resume">Resume</a></h3>
+        </nav>
+    </header>
+    
+    <section class="c12 intro">
+        <h1 class="intro-title">🏠 bnb</h1>
+        <h2 class="intro-details">A full-stack home-rental system built with Angular/Ionic, Node.js, Express, and MySQL.</h2>
+    </section>
+
+    <main class="c8-center">
+        <h3>Overview</h3>
+        <p>For my iXperience Full Stack Coding course, my final project was to create a functioning system that replicated
+            the services of Airbnb. I created 5 components:
+        </p>
+        <ol class="list">
+            <li>Consumer mobile app - allows users to join, view listed properties, and book stays.</li>
+            <li>Provider mobile app - allows users to join and list & manage their own properties for rent.</li>
+            <li>Admin panel web app - allows admins to view all registered app users, listings and booking requests.</li>
+            <li>REST API - for communication between apps and database.</li>
+            <li>MySQL database - for storing account information, listings, and booked trips.</li>
+        </ol>
+
+        <h3>Tech Stack</h3>
+        <p>The consumer and provider apps are build with Angular's Ionic framework, with Node.js for the backend. The admin
+            panel is built with Angular. The API is created with Express with a MySQL database.
+        </p>
+
+        <h3>Timeline</h3>
+        <p>July to August 2019</p>
+
+        <hr>
+
+        <h3>Description</h3>
+        <p>On each app, users are first prompted to log in. Users of the Consumer and Provider apps are also able to 
+          register an account, but this is not a feature on the Admin panel for security purposes. All users are authenticated 
+          by the API using JWT (JSON Web Tokens). All passwords are hashed using bcrypt.
+        </p>
+
+        <a href="https://github.com/sjwhelpley/fs-bnb/tree/master/fs-consumer"><h4>Consumer bnb app</h4></a>
+
+        <div class="bnb-img">
+          <figure>
+            <img src="../img/bnb-consumer.png" />
+            <figcaption>Screens from bnb consumer app: Explore, Listing Details, and Trips.</figcaption>
+          </figure>
+        </div>
+        
+        <a href="https://github.com/sjwhelpley/fs-bnb/tree/master/fs-provider"><h4>Provider bnb app</h4></a>
+
+        <div class="bnb-img">
+          <figure>
+            <img src="../img/bnb-provider.png" />
+            <figcaption>Screens from bnb provider app: Listings, Listing Details, Booking Requests, and Edit Listing.</figcaption>
+          </figure>
+        </div>
+
+        <a href="https://github.com/sjwhelpley/fs-bnb/tree/master/fs-admin"><h4>Admin panel</h4></a>
+
+        <div class="bnb-img">
+          <figure>
+            <img src="../img/bnb-admin.png" />
+            <figcaption>Screen from bnb admin panel: Listings.</figcaption>
+          </figure>
+        </div>
+
+        <h4>Feel free to also check out my code for the <a href="https://github.com/sjwhelpley/fs-bnb/tree/master/fs-api">API</a> and the <a href="https://github.com/sjwhelpley/fs-bnb/blob/master/fs_bnb_database.sql">database</a>.</h4>
+
+        <h3>Next Steps</h3>
+        <p>My future goals for this project would be to add to the design and features. I would love to create a better sense of a brand
+          and have all applications have a unique, cohesive design. The grading of this project was on functionality alone, so I did not spend 
+          a lot of time on the UI/UX. As for features:</p>
+          <ul class="list">
+            <li>On the consumer app, I would like to make the search bar functional so that once a lot of properties are added, users
+          can find them by city or country. I would also like to allow users to edit or delete bookings.</li>
+            <li>On the provider app, I would like to allow providers to add multiple image URLs. I already have the database set up with a 
+              listing-imageURL mapping table, so I just need to give the user multiple fields to add in links. I would like to try giving
+              them the ability to add or subtract input fields as necessary!
+            </li>
+            <li>On the admin panel, I would like to try and add analytics or a summary on the Home page. I would also like to add the feature
+              of an admin being able to delete accounts or reset passwords.
+            </li>
+          </ul>
+    </main>
+
+    <footer class="c12">
+      <div class="social-media">
+        <h3><a href="mailto:sjw86@pitt.edu">EMAIL</a> <a href="https://www.linkedin.com/in/samanthawhelpley/" target="_blank">LINKEDIN</a> 
+          <a href="https://github.com/sjwhelpley" target="_blank">GITHUB</a> <a href="https://codepen.io/samwhelpley/" target="_blank">CODEPEN</a></h3>
+      </div>
+      <p class="small-footer-text">Made with HTML, CSS and ❤️ by Samantha Whelpley.</p>
+      <p class="small-footer-text">&copy; 2020</p>
+    </footer>
+  </body>
+</html>
