@@ -221,6 +221,14 @@ a.active {
   display: inline;
 }
 
+#visimo-link {
+  font-weight: 550;
+}
+
+#visimo-link:hover {
+  color: #006D77;
+}
+
 /* Portfolio */
 .portfolio {
   display: grid;
