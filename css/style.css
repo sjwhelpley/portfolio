@@ -317,11 +317,12 @@ a.active {
 }
 
 /* Google Slides */
-.slides-container {
+.slides-container{
   position: relative;
   width: 100%;
   padding-top: 60%;
   overflow: hidden;
+  text-align: center;
 }
 
 .slides-container iframe {
@@ -332,14 +333,14 @@ a.active {
   height: 100%;
 }
 
-@media only screen and (min-width: 1100px) {
+/* @media only screen and (min-width: 1100px) {
   .slides-container {
     margin: 0 auto;
     padding-top: 30%;
     width: 50%;
     height: 50%;
   }
-}
+} */
 
 /* FA icons */
 .icon {
