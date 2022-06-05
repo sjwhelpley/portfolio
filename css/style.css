@@ -168,6 +168,7 @@ header {
   flex-direction: column;
   width: 100%;
   background-color: var(--lightblue);
+  margin-bottom: 10px;
 }
 
 a.hover {
@@ -285,6 +286,14 @@ a.active {
 #focus {
   text-align: center;
   padding: 20px;
+}
+
+.redtree {
+  color: "red"
+}
+
+.responsival {
+  color: "purple"
 }
 
 /* Resume */
