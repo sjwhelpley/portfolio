@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Samantha Whelpley's web developer portfolio">
+        <meta property="og:title" content="Samantha Whelpley">
+        <meta property="og:image" content="https://samwhelpley.me/img/preview.png">
+        <meta property="og:description" content="Samantha Whelpley's portfolio">
+        <meta property="og:url" content="https://samwhelpley.me/">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script src="https://kit.fontawesome.com/b7684caf24.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        
+        <title>POEMOTION - Samantha Whelpley</title>
+    </head>
+
+  <body class="grid">
+    <header class="c12">
+      <h2 class="name"><a href="../">samantha joy whelpley</a></h2>
+      <div class="mobile-menu" onclick="toggle()"><h2>MENU</h2></div>
+      <nav class="mobile-nav-bar" id="mobile-nav-bar">
+        <h3 class="nav-links"><a class="active" href="../">Work</a></h3>
+        <h3 class="nav-links"><a class="hover" href="../about">About</a></h3>
+        <h3 class="nav-links"><a class="hover" href="../resume">Resume</a></h3>
+      </nav>
+
+      <nav class="content-web nav-bar">
+        <h3 class="nav-links"><a class="active" href="../">Work</a></h3>
+        <h3 class="nav-links"><a class="hover" href="../about">About</a></h3>
+        <h3 class="nav-links"><a class="hover" href="../resume">Resume</a></h3>
+      </nav>
+    </header>
+    
+    <section class="c12 intro">
+        <h1 class="intro-title">💫 POEMOTION</h1>
+        <h2 class="intro-details">Interactive web app built with React, Node.js + Express, face-api.js, and OpenAI API.</h2>
+        <h3>Side Project</h3>
+        <a href="https://github.com/sjwhelpley/react-computervision" class="icon" target="_blank"><i class="icon-margin fa fa-github fa-3x" aria-hidden="true"></i></a>
+        <a href="https://poemotion.herokuapp.com" class="icon" target="_blank"><i class="icon-margin fas fa-external-link-alt fa-3x"></i></a>
+    </section>
+
+    <main class="c8-center bnb">
+        <h3>Overview</h3>
+        <p>At this point in my tech career, I wanted to find ways to extend my interests in web development, user experience, and emerging technologies
+          into a project. Emotion plays a part of the user experience, and I wanted to see how I could use user's emotion to create a unique experience.
+        </p>
+
+        <h3>Tech Stack</h3>
+        <p>I used React for the frontend, with face-api.js used to detect the facial expressions. On the backend, 
+          I used Node.js with the OpenAI API to generate poems. Both applications are deployed on Heroku.
+        </p>
+
+        <h3>Timeline</h3>
+        <p>June 2022</p>
+
+        <hr>
+
+        <h3>Description</h3>
+        <p>Firstly, I created the frontend application, getting the webcam element connected and able to take a screenshot. From there, I was able to
+          to connect the Computer Vision library face-api.js. There is a lot of flexibilty and options with that package, and I can see it being useful in 
+          the future for more projects. For now, I used it's facial expressions model to determine the user's expression in their given photo.
+        </p>
+
+        <p>From there, I started on the backend Node.js server. It recieves the facial expression from the frontend, and uses that to create a prompt to send
+          to OpenAI to generate a poem specific for that user. The parameters are set so that outputs are reasonably unique. Once the poem is generated, it is returned to the frontend
+          where it is displayed.
+        </p>
+        
+        <br>
+
+        <h4>Feel free to also check out my code for the <a href="https://github.com/sjwhelpley/prioritask-api" target="_blank">API</a>.</h4>
+
+        <h3>Next Steps</h3>
+          <ul class="list">
+            <li>Further enhance the styling of the application, especially based on the user's emotion</li>
+            <li>Experiment with the prompt sent to OpenAI to get even better responses</li>
+          </ul>
+    </main>
+
+    <footer class="c12">
+      <div class="social-media">
+        <h3><a href="mailto:sjw86@pitt.edu">EMAIL</a> <a href="https://www.linkedin.com/in/samanthawhelpley/" target="_blank" rel="noopener">LINKEDIN</a> 
+          <a href="https://github.com/sjwhelpley" target="_blank" rel="noopener">GITHUB</a> <a href="https://codepen.io/samwhelpley/" target="_blank" rel="noopener">CODEPEN</a></h3>
+      </div>
+      <p class="small-footer-text">Made with HTML, CSS and ❤️ by Samantha Whelpley.</p>
+      <p class="small-footer-text">&copy; 2020</p>
+    </footer>
+  </body>
+</html>
